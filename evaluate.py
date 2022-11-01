@@ -150,10 +150,10 @@ if __name__ == '__main__':
 	parser.add_argument("--num_history", default=3)
 
 	# eval parameters
-	parser.add_argument("--nli_model", default="/home/ubuntu/projects/Commit/output/dnli/checkpoint-2423")
+	parser.add_argument("--nli_model", default="Ehsanl/Roberta-DNLI")
 	parser.add_argument("--model_checkpoint")  
 	parser.add_argument("--model_sep_tokens", default=["<user>", "<agent>" ])  # special tokens used to separate user and agent utterances in training   
-	parser.add_argument("--eval_only", default=True)
+	parser.add_argument("--eval_only", default=False)
 	parser.add_argument("--responses_to_eval", default='results/model_output.csv')
 	parser.add_argument("--results_path", default="results")
 	parser.add_argument("--utterance_max_length", default=32)
